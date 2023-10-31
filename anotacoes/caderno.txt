@@ -1,0 +1,24 @@
+Caderno
+Design Patterns
+Rodrigo Branas
+30/10/2023
+
+Design Patterns: Elements of Reusable Object-Oriented Software
+-> Padrões do GOF
+-> Erich Gamma
+-> John Vlissides
+-> Richard Helm
+-> Ralph Johnson
+
+J2EE
+
+PoEAA
+
+Head First - Design Patterns
+
+------
+GOF
+
+Criação
+Estrutura
+Comportamento

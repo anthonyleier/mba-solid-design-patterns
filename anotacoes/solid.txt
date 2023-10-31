@@ -1,0 +1,7 @@
+SOLID
+
+SRP - Single Responsability Principle
+Devemos separar coisas que mudam por motivos diferentes
+
+DIP - Dependency Inversion Principle
+Componentes de alto nível não devem depender de componentes de baixo nível, eles devem depender de abstrações

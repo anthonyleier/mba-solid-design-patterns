@@ -70,6 +70,17 @@ test("Deve gerar as notas fiscais por regime de competência", async function ()
     expect(output.at(0)?.amount).toBe(500);
 });
 
+test("Deve gerar as notas fiscais por regime de competência para csv", async function () {
+    const input = {
+        month: 2,
+        year: 2023,
+        type: "accrual",
+        format: "csv",
+    };
+    const output = await generateInvoices.execute(input);
+    expect(output).toBe("2023-02-01;500");
+});
+
 afterEach(async () => {
     connection.close();
 });

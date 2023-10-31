@@ -8,3 +8,9 @@ Realizar a persistência de aggregates (clusters de objetos de domínio como ent
 
 Adapter
 Converte uma interface de uma classe em outra interface esperada pelo cliente, permitindo que classes incompatíveis trabalhem juntas
+
+Strategy
+Criar comportamento intercambiável
+
+Dynamic Factory
+Criar uma instância com base em uma string

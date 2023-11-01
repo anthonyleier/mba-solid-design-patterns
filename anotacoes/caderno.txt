@@ -3,6 +3,7 @@ Design Patterns
 Rodrigo Branas
 30/10/2023
 
+-----
 Design Patterns: Elements of Reusable Object-Oriented Software
 -> Padrões do GOF
 -> Erich Gamma
@@ -10,15 +11,14 @@ Design Patterns: Elements of Reusable Object-Oriented Software
 -> Richard Helm
 -> Ralph Johnson
 
-J2EE
+-----
+Tipos de Design Patterns
+-> Criação
+-> Estrutura
+-> Comportamento
 
-PoEAA
-
-Head First - Design Patterns
-
-------
-GOF
-
-Criação
-Estrutura
-Comportamento
+-----
+Livros Importantes
+-> GoF
+-> Head First - Design Patterns
+-> Patterns of Enterprise Application Architecture

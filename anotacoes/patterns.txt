@@ -20,3 +20,9 @@ Formatar e adequar um determinado conjunto de dados às necessidades do cliente
 
 Decorator
 Permite acrescentar funcionalidades a um objeto existente (OCP)
+
+Controller
+Conecta o driver com a aplicação, repassando os dados de entrada e retornando a saída de acordo
+
+Composition Root
+Entrypoint da aplicação, onde são criadas as instâncias utilizadas pelos componentes

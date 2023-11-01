@@ -17,3 +17,6 @@ Criar uma instância com base em uma string
 
 Presenter
 Formatar e adequar um determinado conjunto de dados às necessidades do cliente
+
+Decorator
+Permite acrescentar funcionalidades a um objeto existente (OCP)

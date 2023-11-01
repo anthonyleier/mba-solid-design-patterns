@@ -1,9 +1,9 @@
-import moment from "moment";
 import ContractRepository from "./ContractRepository";
 import Presenter from "./Presenter";
 import JsonPresenter from "./JsonPresenter";
+import Usecase from "./Usecase";
 
-export default class GenerateInvoices {
+export default class GenerateInvoices implements Usecase {
     constructor(readonly contractRepository: ContractRepository, readonly presenter: Presenter = new JsonPresenter()) {}
 
     async execute(input: Input): Promise<any> {

@@ -1,33 +1,23 @@
 import moment from "moment";
 import ContractRepository from "./ContractRepository";
+import Presenter from "./Presenter";
+import JsonPresenter from "./JsonPresenter";
 
 export default class GenerateInvoices {
-    constructor(readonly contractRepository: ContractRepository) {}
+    constructor(readonly contractRepository: ContractRepository, readonly presenter: Presenter = new JsonPresenter()) {}
+
     async execute(input: Input): Promise<any> {
-        const output: any = [];
+        const output: Output[] = [];
         const contracts = await this.contractRepository.list();
 
         for (const contract of contracts) {
             const invoices = contract.generateInvoices(input.month, input.year, input.type);
             for (const invoice of invoices) {
-                output.push({ date: moment(invoice.date).format("YYYY-MM-DD"), amount: invoice.amount });
+                output.push({ date: invoice.date, amount: invoice.amount });
             }
         }
 
-        if (!input.format || input.format === "json") {
-            return output;
-        }
-
-        if (input.format === "csv") {
-            const lines: any[] = [];
-            for (const invoice of output) {
-                const line: string[] = [];
-                line.push(invoice.date);
-                line.push(`${invoice.amount}`);
-                lines.push(line.join(";"));
-            }
-            return lines.join("\n");
-        }
+        return this.presenter.present(output);
     }
 }
 
@@ -38,7 +28,7 @@ type Input = {
     format?: string;
 };
 
-// type Output = {
-//     date: string;
-//     amount: number;
-// };
+export type Output = {
+    date: Date;
+    amount: number;
+};

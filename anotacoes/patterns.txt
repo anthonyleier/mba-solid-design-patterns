@@ -25,4 +25,7 @@ Controller
 Conecta o driver com a aplicação, repassando os dados de entrada e retornando a saída de acordo
 
 Composition Root
-Entrypoint da aplicação, onde são criadas as instâncias utilizadas pelos componentes
+Entrypoint da aplicação, onde são criadas as instâncias utilizadas pelos componentes, monta o grafo de dependências da aplicação
+
+Mediator / Observer
+Cria um mecanismo de notificação para reduzir o acoplamento dos objetos

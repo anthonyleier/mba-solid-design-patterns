@@ -1,9 +1,9 @@
-import ContractDatabaseRepository from "./ContractDatabaseRepository";
-import ExpressAdapter from "./ExpressAdapter";
-import GenerateInvoices from "./GenerateInvoices";
-import LoggerDecorator from "./LoggerDecorator";
-import MainController from "./MainController";
-import PgPromiseAdapter from "./PgPromiseAdapter";
+import ContractDatabaseRepository from "./infra/repository/ContractDatabaseRepository";
+import ExpressAdapter from "./infra/http/ExpressAdapter";
+import GenerateInvoices from "./application/usecase/GenerateInvoices";
+import LoggerDecorator from "./application/decorator/LoggerDecorator";
+import MainController from "./infra/http/MainController";
+import PgPromiseAdapter from "./infra/database/PgPromiseAdapter";
 
 const connection = new PgPromiseAdapter();
 const contractRepository = new ContractDatabaseRepository(connection);

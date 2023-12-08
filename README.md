@@ -20,7 +20,7 @@ npm install
 
 ## Professor
 
-<a href="https://github.com/argentinaluiz">
+<a href="https://github.com/rodrigobranas">
     <img src="https://avatars.githubusercontent.com/u/7491283?v=4" width="100px;" alt=""/>
     <br />
     <sub>
